@@ -2,6 +2,7 @@
 
 # D:\WD\emoplay\app.py: 1
 Flask == 1.1.2
+gunicorn
 
 # D:\WD\emoplay\app.py: 3
 # D:\WD\emoplay\facial-detection.ipynb: 128,129,130,131,132,133,134,135
