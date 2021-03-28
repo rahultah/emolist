@@ -1,11 +1,39 @@
 <html>
 
 <body>
-    
+    <link rel="stylesheet" href="{{ url_for('static', filename='loading.css') }}">
+
+
+<div class="wrap" id="loading">
+    <div class="loading">
+      <div class="bounceball"></div>
+      <div class="text">NOW LOADING</div>
+    </div>
+</div>   
+
+
+<div id="main" style="visibility: hidden;">
 <img src="{{url_for('static', filename='after.jpg')}}" alt="image" height=52% width = 50%>
 
 {{data}}
+</div>
 
+
+
+
+<script>
+function hidediv()
+{
+    document.getElementById("loading").style.visibility = "Hidden";
+}
+setTimeout("hidediv()",3000);
+function showdiv()
+{
+    document.getElementById("main").style.visibility = "visible";
+}
+setTimeout("showdiv()",3000);
+
+</script>
 </body>
 
 </html>
