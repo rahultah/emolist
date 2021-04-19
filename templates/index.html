@@ -1,6 +1,28 @@
 <html>
 
 <body>
+  <header>
+      <nav>
+        <ul class="nav__links">
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Need Help ?</a></li>
+            <li><a href="#">Clinics</a></li>
+        </ul>
+    </nav>
+    <p class="menu cta1">Menu</p>
+</header>
+<div id="mobile__menu" class="overlay">
+    <a class="close">&times;</a>
+    <div class="overlay__content">
+        <a href="#">Services</a>
+        <a href="#">Projects</a>
+        <a href="#">About</a>
+    </div>
+</div>
+<script type="text/javascript" src="{{ url_for('static', filename='navbar.js') }}"></script>
+
+
+
     <link rel="stylesheet" href="{{ url_for('static', filename='upload.scss') }}">
 
     
@@ -35,7 +57,7 @@
   <link href='https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700' rel='stylesheet' type='text/css'>
   <!-- BUTTON -->
   <div class="wrapper">
-    <button class="cta" type="submit">
+    <button class="cta2" type="submit">
         
       <span>Analyse Image</span>
       <span>

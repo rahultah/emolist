@@ -65,7 +65,8 @@ def after():
 
 
 if __name__ == '__main__': app.run(host = '0.0.0.0',port=8080)
-
+# [3:10 PM, 3/28/2021] Rahul Tah: tmux new -s mywindow
+# [3:10 PM, 3/28/2021] Rahul Tah: tmux a -t mywindow
 
 # if __name__ == '__main__':
 #     app.debug = True

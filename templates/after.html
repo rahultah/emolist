@@ -2,7 +2,30 @@
 
 <body>
     <link rel="stylesheet" href="{{ url_for('static', filename='loading.css') }}">
-
+    <header>
+        <nav>
+          <ul class="nav__links">
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Need Help ?</a></li>
+              <li><a href="#">Clinics</a></li>
+          </ul>
+      </nav>
+      <p class="menu cta1">Menu</p>
+  </header>
+  <div id="mobile__menu" class="overlay">
+      <a class="close">&times;</a>
+      <div class="overlay__content">
+          <a href="#">Services</a>
+          <a href="#">Projects</a>
+          <a href="#">About</a>
+      </div>
+  </div>
+  <script type="text/javascript" src="{{ url_for('static', filename='navbar.js') }}"></script>
+  
+  
+  
+      <link rel="stylesheet" href="{{ url_for('static', filename='upload.scss') }}">
+<!-- loading -->
 
 <div class="wrap" id="loading">
     <div class="loading">
@@ -11,14 +34,22 @@
     </div>
 </div>   
 
+<!-- Test -->
+
+
+<!-- Test -->
+
+
+
+<!-- Main -->
+
 
 <div id="main" style="visibility: hidden;">
-<img src="{{url_for('static', filename='after.jpg')}}" alt="image" height=52% width = 50%>
+<img src="{{url_for('static', filename='after.jpg')}}" alt="image" height=52% width = 50%> 
+<h1>  {{data}}</h1>
+</div> 
 
-{{data}}
-</div>
-
-
+<!-- Main -->
 
 
 <script>
